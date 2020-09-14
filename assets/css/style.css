@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
+  background: #25005f;
   transition: background 0.2s ease-in-out;
 }
 
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero
 {
-  color: #471a36;
+  color: #25005f;
 }
 #hero .hero-container {
   position: relative;
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero p span {
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #2f0c70;
 }
 
 @media (min-width: 1024px) {
@@ -501,6 +501,10 @@ color:rgb(0,0,80);
   bottom: 0;
   visibility: hidden;
 }
+.actions a
+{
+  color: white;
+}
 .proj-detail:hover .actions 
 {
   visibility: visible;
@@ -706,7 +710,7 @@ color:rgb(0,0,80);
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
+  background:#25005f;
 }
 
 @-webkit-keyframes animate-loading {
