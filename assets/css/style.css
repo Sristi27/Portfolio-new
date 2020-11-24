@@ -1,9 +1,4 @@
-/**
-* Template Name: iPortfolio - v1.4.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -52,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #25005f;
+  background: #06014d;
   transition: background 0.2s ease-in-out;
 }
 
@@ -211,47 +206,53 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/drawkit-grape-pack-illustration-3.svg") no-repeat top right;
-  background-size: contain;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  /* background: url("../img/drawkit-grape-pack-illustration-3.svg") no-repeat top right; */
+  background: url("../img/pexels-photo-392018-2.jpg") no-repeat top right;
+  background-size: contain;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  opacity: 0.7;
+  z-index: -1;
 }
+
 #hero
 {
-  color: #25005f;
+  color:   #011f4d;
+  
 }
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  margin-top:40px;
+  min-width: 30%;
+
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
+  margin-bottom: 14px;
+  font-size: 75px;
   font-weight: 700;
-  line-height: 56px;
+  line-height:70px;
 }
 
 #hero p {
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 28px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #2f0c70;
+  color: #06014d;
+  border-bottom: 3px solid  #06014d;
 }
 
 @media (min-width: 1024px) {
@@ -402,9 +403,11 @@ text-align: center;
 {
  outline: none;
  border: none;
+ font-size: 20px;
  border-radius: 5px;
+ margin-top: 10px;
  background-color: rgb(0, 0, 80);
- padding:5px 12px;
+ padding:8px 15px;
  
 }
 #cv a
@@ -415,12 +418,18 @@ text-align: center;
 
 #cv:hover
 {
-  background-color: teal;
+  border: 3px solid rgb(0, 0, 80);
+  background-color: white;
 }
-a:hover
+#cv:hover a
 {
 color:rgb(0,0,80);
 }
+
+
+
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -429,94 +438,191 @@ color:rgb(0,0,80);
 }
 
 
-
 .portfolio p{
   text-align: center;
 }
+
+
 .portfolio .proj-detail
 {
  width: 300px;
  height:200px;
 }
-.portfolio .proj-detail::before
+
+.proj-detail .proj,.proj-detail .actions
+{
+  visibility: hidden;
+}
+
+.portfolio .one::before
 {
   content: '';
   height:200px;
   width: 300px;
-  background: url("/assets/img/msi-gs70-gs70stealth-keyboard.jpg") no-repeat center center fixed;
+  background: url("/assets/img/to-do.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
   top:0;
   left:20px;
   opacity: 0.9;
-  
   position: absolute;
 }
-.proj-detail:hover::before
+
+.portfolio .two::before
+{
+  content: '';
+  height:200px;
+  width: 300px;
+  background: url("/assets/img/student.jpg") no-repeat ;
+  background-size: cover;
+  z-index: -1;
+  top:0;
+  left:20px;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.portfolio .three::before
+{
+  content: '';
+  height:200px;
+  width: 300px;
+  background: url("/assets/img/insta1.jpg") no-repeat;
+  /* background-position:bottom -90px center; */
+  background-position-y:-65px;
+  background-size: cover;
+  z-index: -1;
+  top:0;
+  left:20px;
+  opacity: 0.9;
+  position: absolute;
+}
+.portfolio .four::before
+{
+  content: '';
+  height:200px;
+  width: 300px;
+  background: url("/assets/img/pwd.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  top:0;
+  left:20px;
+  opacity: 0.9;
+  position: absolute;
+}
+.portfolio .five::before
+{
+  content: '';
+  height:200px;
+  width: 300px;
+  background: url("/assets/img/color.png") no-repeat;
+  background-size: cover;
+  z-index: -1;
+  top:0;
+  left:20px;
+  opacity: 0.9;
+  position: absolute;
+}
+.portfolio .six::before
+{
+  content: '';
+  height:200px;
+  width: 300px;
+  background: url("/assets/img/notes.jpg") no-repeat ;
+  background-size: cover;
+  background-position-y: -20px;
+  z-index: -1;
+  top:0;
+  left:20px;
+  opacity: 0.9;
+  position: absolute;
+}
+
+/* .proj-detail:hover::before
 {
   opacity: 0.8;
-}
-.proj
-{
-  height:150px;
+} */
+
+
+.proj {
+ text-align: center;
+ position: relative;
+ top:100%;
+ display: flex;
+ padding: 2px 6px;
+ align-items: center;
+ left: 5px;
+ justify-content: space-evenly;
+ width: 95%;
+ margin:0 auto;
+ transform: translateY(-100%);
+ color:black
 }
 .proj p{
-  position: relative;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-40%);
-  font-size:30px;
-  color:white
+  font-size: 17px;
+  width:60%;
+  padding-top: 10px;
 }
+.proj::before{
+  background-color: blanchedalmond;
+  content: '';
+  height:100%;
+  position: absolute;
+  width: 100%;
+  left:0px;
+  bottom:0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
 .actions button{
   background-color: #149ddd;
-  color: white;
   border: none;
   outline:none;
-  padding: 5px 30px;
+  padding: 5px 15px;
   border-radius: 5px;
-  width:100%;
 }
-#portfolio #more a
+
+#portfolio #more a,.actions button a
 {
   color:white;
   
 }
+#portfolio .view
+{
+  text-align: center;
+  margin-top:20px;
+}
+
 #portfolio #more{
   background-color:#149ddd;
   outline: none;
   padding: 5px 20px;
   border-radius: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: relative;
+  margin-top: 20px;
   border: none;
 }
+
+#more:hover
+{
+  background-color:   rgb(0, 0, 80);
+}
+
 .actions
 {
-  height:50px;
-  left:50%;
-  transform: translateX(-50%);
-  position: absolute;
-  bottom: 0;
+  
+  text-align: center;
   visibility: hidden;
 }
-.actions a
-{
-  color: white;
-}
-.proj-detail:hover .actions 
+
+.proj-detail:hover .actions ,.proj-detail:hover .proj
 {
   visibility: visible;
 }
-.proj-detail:hover::before button{
+.proj-detail:hover::before button,.proj-detail:hover .proj{
 
   transition: all ease-in-out 0.3s;
 }
-
-#portfolio #more{
-  margin-top:20px;
-    }
 
 @media screen and (max-width:800px)
 {
@@ -530,13 +636,13 @@ color:rgb(0,0,80);
 
 
  .proj-detail{
-   margin-left:80px;
+   margin-left:60px;
    width:500px;
  }
  .proj-detail::before
  {
    width: 500px;
-   margin-left:80px;
+   margin-left:60px;
  }
  .actions button{
   left: 30%;
@@ -624,18 +730,18 @@ color:rgb(0,0,80);
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -643,7 +749,7 @@ color:rgb(0,0,80);
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -652,12 +758,12 @@ color:rgb(0,0,80);
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .email-form .error-message br + br {
   margin-top: 25px;
 }
 
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -666,14 +772,14 @@ color:rgb(0,0,80);
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -686,21 +792,21 @@ color:rgb(0,0,80);
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .email-form input, .contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .email-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -709,8 +815,8 @@ color:rgb(0,0,80);
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
-  background:#25005f;
+.contact .email-form button[type="submit"]:hover {
+  background:#06014d;
 }
 
 @-webkit-keyframes animate-loading {
