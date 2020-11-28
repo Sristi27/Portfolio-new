@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #011f4d;
+  color: #149ddd;
 }
 
 .mobile-nav-active {
@@ -272,6 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   {
     background-position: center center;
     background-size: cover;
+    opacity: 1;
   }
   #hero h2 {
     font-size:28px;
@@ -643,13 +644,14 @@ color:rgb(0,0,80);
 
 
  .proj-detail{
-   margin-left:60px;
+   margin:0 auto;
    width:500px;
  }
  .proj-detail::before
  {
    width: 500px;
-   margin-left:60px;
+   margin:0 auto;
+   /* margin-left:60px; */
  }
  .actions button{
   left: 30%;
