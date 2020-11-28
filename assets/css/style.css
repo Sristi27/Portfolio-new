@@ -526,9 +526,9 @@ color:rgb(0,0,80);
 .portfolio .six::before
 {
   content: '';
-  height:200px;
+  height:220px;
   width: 300px;
-  background: url("/assets/img/notes.jpg") no-repeat ;
+  background: url("/assets/img/covid.jpg") no-repeat ;
   background-size: cover;
   background-position-y: -20px;
   z-index: -1;
