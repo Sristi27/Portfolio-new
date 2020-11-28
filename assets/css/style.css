@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #471a36;;
+  color: #011f4d;
 }
 
 .mobile-nav-active {
@@ -211,14 +211,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   /* background: url("../img/drawkit-grape-pack-illustration-3.svg") no-repeat top right; */
-  background: url("../img/pexels-photo-392018-2.jpg") no-repeat top right;
+  background: url("../img/pexels-photo-392018-2.jpg") no-repeat ;
+  background-position: top right;
   background-size: contain;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -257,17 +258,22 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
+  
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 36px;
   }
+  #hero::before
+  {
+    background-position: center center;
+  }
   #hero h2 {
-    font-size:30px;
+    font-size:28px;
     line-height: 24px;
     margin-bottom: 30px;
   }
