@@ -651,7 +651,7 @@ color:rgb(0,0,80);
  {
    width: 500px;
    margin:0 auto;
-   /* margin-left:60px; */
+   margin-left:60px;
  }
  .actions button{
   left: 30%;
