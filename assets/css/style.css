@@ -645,6 +645,7 @@ color:rgb(0,0,80);
 
  .proj-detail{
    margin:0 auto;
+   margin-left:60px;
    width:500px;
  }
  .proj-detail::before
