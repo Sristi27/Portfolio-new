@@ -256,12 +256,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid  #06014d;
 }
 
-@media (min-width: 1024px) {
-  #hero {
-    /* background-attachment: fixed; */
-  }
-  
-}
 
 @media (max-width: 768px) {
   #hero h1 {
