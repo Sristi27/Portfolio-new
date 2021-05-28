@@ -211,15 +211,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   /* background: url("../img/drawkit-grape-pack-illustration-3.svg") no-repeat top right; */
-  background: url("../img/pexels-photo-392018-2.jpg") no-repeat ;
-  background-position: top right;
+  background: url("../img/bk1.jpeg") no-repeat ;
+  background-position:top right;
   background-size: contain;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0.7;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -345,6 +345,12 @@ section {
 #details{
   display: flex;
 }
+
+.content p span
+{
+  color:#149ddd;
+  font-weight: 500;
+}
 @media screen and (max-width:600px)
 {
   .col-lg-4
@@ -461,7 +467,7 @@ color:rgb(0,0,80);
   content: '';
   height:200px;
   width: 300px;
-  background: url("/assets/img/to-do.jpg") no-repeat center center;
+  background: url("/assets/img/res.jpeg") no-repeat center center;
   background-size: cover;
   z-index: -1;
   top:0;
@@ -504,7 +510,7 @@ color:rgb(0,0,80);
   content: '';
   height:200px;
   width: 300px;
-  background: url("/assets/img/pwd.jpg") no-repeat center;
+  background: url("/assets/img/speak.jpeg") no-repeat center;
   background-size: cover;
   z-index: -1;
   top:0;
@@ -555,27 +561,32 @@ color:rgb(0,0,80);
  align-items: center;
  left: 5px;
  justify-content: space-evenly;
- width: 95%;
+ width:100%;
  margin:0 auto;
  transform: translateY(-100%);
  color:black
 }
+
+
 .proj p{
   font-size: 17px;
   width:60%;
+  color: white;
   padding-top: 10px;
 }
+
 .proj::before{
-  background-color: blanchedalmond;
+  background-color: rgb(2, 2, 2);
   content: '';
   height:100%;
   position: absolute;
   width: 100%;
-  left:0px;
+  right:0;
   bottom:0;
   z-index: -1;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
+
 
 .actions button{
   background-color: #149ddd;
@@ -585,7 +596,7 @@ color:rgb(0,0,80);
   border-radius: 5px;
 }
 
-#portfolio #more a,.actions button a
+#portfolio #more a,#portfolio .actions button a
 {
   color:white;
   
