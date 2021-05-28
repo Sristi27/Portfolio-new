@@ -467,7 +467,7 @@ color:rgb(0,0,80);
   content: '';
   height:200px;
   width: 300px;
-  background: url("/assets/img/res.jpeg") no-repeat center center;
+  background: url("https://www.restroapp.com/blog/wp-content/uploads/2020/03/online-food-ordering-statistics-RestroApp.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
   top:0;
