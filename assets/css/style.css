@@ -185,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #06014d;
+  /* #149ddd; */
 }
 
 .mobile-nav-active {
@@ -265,9 +266,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero::before
   {
-    background-position: center center;
+    background-position: center ;
     background-size: cover;
     opacity: 0.9;
+    height:100vh;
   }
   #hero h2 {
     font-size:28px;
